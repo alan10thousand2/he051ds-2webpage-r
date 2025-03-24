@@ -1,0 +1,1009 @@
+<style>
+  /* Slideshow Gallery */
+  .content .c-row.first-row .fs .tSlides img {
+    vertical-align: middle;
+  }
+  /* Position the image container (needed to position the left and right arrows) */
+  .content .c-row.first-row .fs .container {
+    position: relative;
+  }
+
+  /* Hide the images by default */
+  .content .c-row.first-row .fs .tSlides {
+    /* display: none; */
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .content .c-row.first-row .fs .container .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .content .c-row.first-row .fs .container .prev,
+  .content .c-row.first-row .fs .container .next {
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .content .c-row.first-row .fs .container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .content .c-row.first-row .fs .container .prev:hover,
+  .content .c-row.first-row .fs .container .next:hover {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+  }
+
+  /* Number text (1/3 etc) */
+  .content .c-row.first-row .fs .container .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+  .content .c-row.first-row .fs .container .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .content .c-row.first-row .fs .container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .content .c-row.first-row .fs .container .row .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .content .c-row.first-row .fs .container .row .column .dummy {
+    opacity: var(--tid-opacity);
+  }
+
+  .content .c-row.first-row .fs .container .row .column .active,
+  .content .c-row.first-row .fs .container .row .column .dummy:hover {
+    opacity: 1;
+  }
+
+  /* customize */
+  .content .c-row.first-row .fs .container .row {
+    overflow-y: hidden;
+  }
+  .content .c-row.first-row .fs .container .row .column {
+    overflow: hidden;
+    text-align: center;
+  }
+  .content .c-row.first-row .fs .container .row .column .dummy {
+    width: 100%;
+    height: 100%;
+  }
+  .content .c-row.first-row .fs .container .slides {
+    height: 400px;
+    max-height: 400px;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .content .c-row.first-row .fs .container .tSlides {
+    height: 100%;
+    width: auto;
+  }
+  .content .c-row.first-row .fs .container .tSlides::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .content .c-row.first-row .fs .container .s-img-1 {
+    background: url("./img/tokyo/mount-fuji-8010752_960_720.jpg") center/cover
+      no-repeat;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+  .content .c-row.first-row .fs .container .s-img-2 {
+    background: url("./img/tokyo/s2vrEK5KKMKKM8g5LhUStQ.jpg") center/cover
+      no-repeat;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+  .content .c-row.first-row .fs .container .s-img-3 {
+    background: url("./img/tokyo/atul-vinayak-7xPPnLZ7juQ-unsplash.jpg")
+      center/cover no-repeat;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+  .content .c-row.first-row .fs .container .s-img-4 {
+    background: url("./img/tokyo/Japan_Tokyo_Ginza_CPixabay_725794-1.jpg")
+      center/cover no-repeat;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+  .content .c-row.first-row .fs .container .s-img-5 {
+    background: url("./img/tokyo/monica-silva-PmtS28MmcRw-unsplash.jpg")
+      center/cover no-repeat;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+  .content .c-row.first-row .fs .container .s-img-6 {
+    background: url("./img/tokyo/sun-rays-7387131_960_720.jpg") center/cover
+      no-repeat;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  section.fs {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: var(--country-box-shadow);
+  }
+
+  section.fs .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .content .c-row.first-row .fs .container .caption-container {
+    background-color: gray;
+    padding: 2px 15px;
+  }
+
+  .content .c-row.first-row .fs .container .row {
+    margin-right: 0px;
+    margin-left: 0px;
+    overflow: hidden;
+  }
+
+  .content .c-row.first-row .fs .container .slides .tSlides p {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    font-size: 27px;
+    opacity: 1;
+    font-weight: bold;
+  }
+
+  .content .c-row.first-row .fs .container .slides .tSlides .inner-text::after {
+    content: "";
+  }
+
+  /* CSS aade in animation */
+  .content .c-row.first-row .fs .container .slides .tSlides .inner-text {
+    animation-name: inner-text;
+    animation-duration: 3s;
+  }
+
+  @keyframes inner-text {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: lightgray;
+    opacity: var(--pn-opacity);
+  }
+  .prev {
+    transform: translate(0%, -50%);
+  }
+
+  .next {
+    margin-right: 15px;
+    transform: translate(20%, -50%);
+  }
+
+  .fa-angle-left,
+  .fa-angle-right {
+    font-size: 48px;
+    color: white;
+  }
+  .fa-angle-left:hover,
+  .fa-angle-right:hover {
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .fa-angle-left,
+  .fa-angle-right {
+    align-self: center;
+  }
+
+  /* keeping */
+  .tokyo .breadcrumb:nth-child(1) {
+    color: var(--secondary-color);
+  }
+
+  .japan-tokyo {
+    padding-right: 0px;
+  }
+
+  /*SE*/
+  section.se {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--food-background);
+    box-shadow: var(--other-box-shadow);
+  }
+  section.se .se-a p {
+    padding: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  @media (max-width: 474.98px) {
+    #content-wrapper > main > div.content > section.se > div > iframe {
+      height: 380px;
+    }
+  }
+
+  @media (min-width: 475px) and (max-width: 575.98px) {
+    #content-wrapper > main > div.content > section.se > div > iframe {
+      height: 380px;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    #content-wrapper > main > div.content > section.se > div > iframe {
+      height: 380px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    #content-wrapper > main > div.content > section.se > div > iframe {
+      height: 450px;
+    }
+  }
+
+  /* ts */
+  section.ts {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--food-background);
+    box-shadow: var(--other-box-shadow);
+  }
+  section.ts .ts-a p {
+    padding: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  section.ts .ts-food {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    place-content: space-around;
+    place-items: center;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  section.ts .ts-food .ts-f-item {
+    display: flex;
+    width: 140px;
+    height: 140px;
+    border: 1px solid var(--food-item-border);
+    background-color: transparent;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  section.ts .ts-food .ts-f-item:hover {
+    border: 3px solid var(--secondary-color);
+  }
+  section.ts .ts-food .ts-f-item img:hover {
+    transform: scale(1.5);
+  }
+
+  /* ss */
+  .content .row.c-row.second-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .map {
+    margin-left: 15px;
+  }
+
+  .content .c-row .map {
+    background-color: var(--map-background);
+  }
+
+  section.map {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .map-a p {
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .map {
+    padding: 15px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: var(--other-box-shadow);
+  }
+
+  .map-frame {
+    text-align: center;
+    overflow: hidden;
+  }
+
+  section.map .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  @media (max-width: 500px) {
+    .content .c-row.first-row .fs .container .prev,
+    .content .c-row.first-row .fs .container .next {
+      top: 65%;
+    }
+  }
+
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .content .c-row.first-row .fs .container .prev,
+    .content .c-row.first-row .fs .container .next {
+      top: 60%;
+    }
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .map {
+      margin-right: 15px;
+    }
+
+    .content .row.c-row.third-row {
+      padding-right: 30px;
+    }
+
+    .content .row.c-row.second-row {
+      padding-right: 30px;
+    }
+    .content .c-row.first-row .fs .container {
+      max-width: 100%;
+    }
+    .content .c-row.first-row .fs .container .prev,
+    .content .c-row.first-row .fs .container .next {
+      top: 45%;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .content .c-row.first-row .fs .container {
+      max-width: 100%;
+    }
+
+    .content .c-row.first-row {
+      padding-right: 15px;
+    }
+    .content .c-row.first-row .fs .container .prev,
+    .content .c-row.first-row .fs .container .next {
+      top: 45%;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .content .c-row.first-row .fs .container {
+      max-width: 100%;
+    }
+    .content .c-row.first-row {
+      padding-right: 15px;
+    }
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .content .c-row.first-row .fs .container {
+      max-width: 100%;
+    }
+    .content .c-row.first-row {
+      padding-right: 15px;
+    }
+  }
+
+  /*photo-frame*/
+
+  .photo-frame {
+    padding: 15px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr,
+      1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr,
+      1fr;
+    grid-gap: 10px;
+    color: transparent;
+    border-radius: 8px;
+  }
+
+  @media (min-width: 500px) {
+    .photo-frame {
+      min-height: 570px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 530px) {
+    .photo-frame {
+      min-height: 600px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 550px) {
+    .photo-frame {
+      min-height: 610px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .photo-frame {
+      min-height: 630px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 650px) {
+    .photo-frame {
+      min-height: 650px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 675px) {
+    .photo-frame {
+      min-height: 700px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .photo-frame {
+      min-height: 750px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .photo-frame {
+      min-height: 790px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 820px) {
+    .photo-frame {
+      min-height: 820px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .photo-frame {
+      min-height: 850px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .photo-frame {
+      min-height: 900px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .photo-frame {
+      min-height: 1100px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .photo-frame {
+      min-height: 1250px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    .photo-frame {
+      min-height: 1450px;
+      width: 100%;
+    }
+  }
+
+  .photo {
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  .photo:hover {
+    border: 3px solid var(--secondary-color);
+  }
+
+  .photo-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+      url("./img/tokyo/album/sora-sagano-8sOZJ8JF0S8-unsplash.jpg") center/cover
+        no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 15;
+  }
+
+  .photo-2 {
+    background: url("./img/tokyo/album/jazz-simbulan-NirnCro81LE-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 10;
+  }
+
+  .photo-3 {
+    background: url("./img/tokyo/album/a0001775_parts_621af3cea238e.jpg")
+      center/cover no-repeat;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+
+  .photo-5 {
+    background: url("./img/tokyo/album/finan-akbar-HuC3cii5VA8-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .photo-7 {
+    background: url("./img/tokyo/album/david-edelstein-N4DbvTUDikw-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+
+  .photo-9 {
+    background: url("./img/tokyo/album/erik-eastman-yiptq3TFiX8-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+  }
+
+  .photo-11 {
+    background: url("./img/tokyo/album/maria-krasnova-vTIl5KeOyhA-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+  }
+
+  .photo-10 {
+    background: url("./img/tokyo/album/sorasak-_UIN-pFfJ7c-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 3;
+    grid-column-end: 10;
+    grid-row-start: 8;
+    grid-row-end: 15;
+  }
+
+  .photo-17 {
+    background: url("./img/tokyo/album/astemir-almov-LTUTt211lrw-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 7;
+    grid-row-end: 11;
+  }
+
+  .photo-19 {
+    background: url("./img/tokyo/album/chris-yang-P_2MCw_fyss-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 10;
+    grid-row-end: 15;
+  }
+
+  .photo-21 {
+    background: url("./img/tokyo/album/andrea-serini-miDzQLvt5y8-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 8;
+  }
+
+  .photo-23 {
+    background: url("./img/tokyo/album/mos-design-IE3z7v8obqU-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 9;
+    grid-row-end: 15;
+  }
+
+  .photo-25 {
+    background: url("./img/tokyo/album/kimono-1822520_960_720.jpg") center/cover
+      no-repeat;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 10;
+  }
+
+  .photo-27 {
+    background: url("./img/tokyo/album/kimono-6683245_960_720.jpg") center/cover
+      no-repeat;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 11;
+  }
+
+  .photo-29 {
+    background: url("./img/tokyo/album/p-c-m1NYccdJ3ls-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 12;
+    grid-row-end: 15;
+  }
+</style>
+<!-- breadcrumb -->
+<div class="row">
+  <div class="col-md-12 tokyo">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">JAPAN</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Tokyo</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<!-- /.breadcrumb -->
+<!-- content -->
+<div class="content">
+  <h1>Tokyo</h1>
+  <section class="photo-frame" id="tokyo-album">
+    <div class="photo0 photo-1">1</div>
+    <div class="photo photo-2">2</div>
+    <div class="photo photo-3">3</div>
+    <!-- <div class="photo photo-4">4</div> -->
+    <div class="photo photo-5">5</div>
+    <!-- <div class="photo photo-6">6</div> -->
+    <div class="photo photo-7">7</div>
+    <!-- <div class="photo photo-8">8</div> -->
+    <div class="photo photo-9">9</div>
+    <div class="photo photo-10">10</div>
+    <div class="photo photo-11">11</div>
+    <!-- <div class="photo photo-12">12</div> -->
+    <!-- <div class="photo photo-13">13</div> -->
+    <!-- <div class="photo photo-14">14</div> -->
+    <!-- <div class="photo photo-15">15</div> -->
+    <!-- <div class="photo photo-16">16</div> -->
+    <div class="photo photo-17">17</div>
+    <!-- <div class="photo photo-18">18</div> -->
+    <div class="photo photo-19">19</div>
+    <!-- <div class="photo photo-20">20</div> -->
+    <div class="photo photo-21">21</div>
+    <!-- <div class="photo photo-22">22</div> -->
+    <div class="photo photo-23">23</div>
+    <!-- <div class="photo photo-24">24</div> -->
+    <div class="photo photo-25">25</div>
+    <!-- <div class="photo photo-26">26</div> -->
+    <div class="photo photo-27">27</div>
+    <!-- <div class="photo photo-28">28</div> -->
+    <div class="photo photo-29">29</div>
+    <!-- <div class="photo photo-30">30</div> -->
+    <!-- <div class="photo photo-31">31</div> -->
+    <!-- <div class="photo photo-32">32</div> -->
+    <!-- <div class="photo photo-33">33</div> -->
+    <!-- <div class="photo photo-34">34</div> -->
+    <!-- <div class="photo photo-35">35</div> -->
+    <!-- <div class="photo photo-36">36</div> -->
+    <!-- <div class="photo photo-37">37</div> -->
+  </section>
+
+  <section class="se">
+    <article class="se-a">
+      <p>
+        Cities like Tokyo and Osaka are shopping paradises and entertainment
+        hubs. From high-end department stores to unique specialty shops, along
+        with a wide range of entertainment activities and amusement places,
+        travelers can fully enjoy the pleasures of shopping and entertainment.
+      </p>
+    </article>
+    <div class="media">
+      <iframe
+        width="100%"
+        height="600px"
+        src="https://www.youtube.com/embed/Oa4BGCZWdMk?rel=0&modestbranding=1"
+        title="【東京美食】築地市場必吃10選🤩內附美食地圖！三宅水產、玉子燒名店、明太子可樂餅、丸豐飯糰、菅野海鮮丼、雕魚燒、和牛串、生牡蠣、手沖咖啡｜Japan 4K vlog"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <div class="row c-row first-row">
+    <div class="col-md-12 japan-tokyo">
+      <section class="fs">
+        <div class="container">
+          <div class="slides">
+            <div class="tSlides s-img-1">
+              <div class="numbertext">1 / 6</div>
+              <!-- <img src="./img/tokyo/mount-fuji-8010752_960_720.jpg" style="width:100%"> -->
+              <br />
+              <p class="inner-text"></p>
+            </div>
+            <div class="tSlides s-img-2">
+              <div class="numbertext">2 / 6</div>
+              <!-- Tokyo teamLab Borderless -->
+              <!-- <img src="./img/tokyo/s2vrEK5KKMKKM8g5LhUStQ.jpg" style="width:100%"> -->
+              <br />
+              <p style="color: white" class="inner-text"></p>
+            </div>
+            <div class="tSlides s-img-3">
+              <div class="numbertext">3 / 6</div>
+              <!-- <img src="./img/tokyo/atul-vinayak-7xPPnLZ7juQ-unsplash.jpg" style="width:100%"> -->
+              <br />
+              <p style="color: black" class="inner-text"></p>
+            </div>
+            <div class="tSlides s-img-4">
+              <div class="numbertext">4 / 6</div>
+              <!-- <div class="s-img-4"></div> -->
+              <!-- <img src="./img/tokyo/Japan_Tokyo_Ginza_CPixabay_725794-1.jpg" style="width:100%"> -->
+              <br />
+              <p class="inner-text"></p>
+            </div>
+            <div class="tSlides s-img-5">
+              <div class="numbertext">5 / 6</div>
+              <!-- <img src="./img/tokyo/monica-silva-PmtS28MmcRw-unsplash.jpg" style="width:100%"> -->
+              <br />
+              <p class="inner-text"></p>
+            </div>
+            <div class="tSlides s-img-6">
+              <div class="numbertext">6 / 6</div>
+              <!-- <img src="./img/tokyo/sun-rays-7387131_960_720.jpg" style="width:100%"> -->
+              <br />
+              <p class="inner-text"></p>
+            </div>
+          </div>
+          <a class="prev" onclick="tPlusSlides(-1)"
+            ><i class="fa-solid fa-angle-left fa-2xl"></i
+          ></a>
+          <a class="next" onclick="tPlusSlides(1)"
+            ><i class="fa-solid fa-angle-right fa-2xl"></i
+          ></a>
+
+          <div class="caption-container">
+            <p id="t-caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img
+                class="dummy cursor"
+                src="./img/tokyo/mount-fuji-8010752_960_720.jpg"
+                onclick="tCurrentSlide(1)"
+                alt="tokyo.fs.c-r-c1-alt"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="dummy cursor"
+                src="./img/tokyo/s2vrEK5KKMKKM8g5LhUStQ.jpg"
+                onclick="tCurrentSlide(2)"
+                alt="tokyo.fs.c-r-c2-alt"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="dummy cursor"
+                src="./img/tokyo/atul-vinayak-7xPPnLZ7juQ-unsplash.jpg"
+                onclick="tCurrentSlide(3)"
+                alt="tokyo.fs.c-r-c3-alt"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="dummy cursor"
+                src="./img/tokyo/Japan_Tokyo_Ginza_CPixabay_725794-1.jpg"
+                onclick="tCurrentSlide(4)"
+                alt="tokyo.fs.c-r-c4-alt"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="dummy cursor"
+                src="./img/tokyo/monica-silva-PmtS28MmcRw-unsplash.jpg"
+                onclick="tCurrentSlide(5)"
+                alt="tokyo.fs.c-r-c5-alt"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="dummy cursor"
+                src="./img/tokyo/sun-rays-7387131_960_720.jpg"
+                onclick="tCurrentSlide(6)"
+                alt="tokyo.fs.c-r-c6-alt"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="ts">
+    <article class="ts-a">
+      <p>
+        Japanese cuisine is diverse and delicious, from sushi and sashimi to
+        ramen and tempura. Street food such as takoyaki and okonomiyaki also
+        captivate and delight, making it hard to resist coming back for more.
+      </p>
+    </article>
+    <!-- food flex-container -->
+    <div class="ts-food">
+      <div class="ts-f-item">
+        <img
+          src="./img/tokyo/food/asian-cuisine-7209004_1280.jpg"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/tokyo/food/ga5-jpeg.png"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/tokyo/food/japan-food-5066736_1280.jpg"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/tokyo/food/jpg-76-4.jpeg"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/tokyo/food/jpg-81-3.jpeg"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/tokyo/food/jpg-96-4.jpeg"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/tokyo/food/jpg-97-4.jpeg"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/tokyo/food/matcha-green-tea-2683990_1280.jpg"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/tokyo/food/png-9-1.png"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+    </div>
+    <!-- /. food flex-container -->
+  </section>
+
+  <div class="row c-row second-row">
+    <section class="map col-sm-12">
+      <div class="row">
+        <div class="map-a col-sm-12 col-md-12 col-lg-6">
+          <p>
+            Tokyo is located in the eastern part of the Kanto Plain, bordering
+            Tokyo Bay. The area consists mainly of flat lowlands, ideal for
+            large-scale urban development, while its network of rivers has
+            historically played key roles in flood control and irrigation,
+            shaping the city's unique landscape.
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="map-frame col-sm-12 col-md-12 col-lg-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696866.4891517595!2d139.9635837920238!3d35.7709058779162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2z5pel5pys5p2x5Lqs6YO9!5e0!3m2!1szh-TW!2shk!4v1739719199430!5m2!1szh-TW!2shk"
+            width="100%"
+            height="600px"
+            style="border: 0"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+  <br /><br />
+</div>
+<!-- /.content -->

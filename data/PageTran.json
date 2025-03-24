@@ -1,0 +1,60 @@
+{
+  "page": {
+    "zhejiang": {
+      "en": {
+        "default": "Zhejiang"
+      },
+      "zh-TW": {},
+      "zh-CN": {},
+      "filePath": "templates/Zhejiang.html",
+      "country": "CHINA"
+    },
+    "contact": {
+      "en": {
+        "default": "Contact",
+        "form": "Registration"
+      },
+      "zh-TW": {},
+      "zh-CN": {},
+      "filePath": "templates/Contact.html",
+      "country": "contact"
+    }
+    ,
+    "home": {
+      "en": {
+        "default": "Home"
+      },
+      "zh-TW": {},
+      "zh-CN": {},
+      "filePath": "templates/Home.html",
+      "country": "home"
+    },
+    "tokyo": {
+      "en": {
+        "default": "Tokyo"
+      },
+      "zh-TW": {},
+      "zh-CN": {},
+      "filePath": "templates/Tokyo.html",
+      "country": "JAPAN"
+    },
+    "singapore": {
+      "en": {
+        "default": "Singapore"
+      },
+      "zh-TW": {},
+      "zh-CN": {},
+      "filePath": "templates/Singapore.html",
+      "country": "SINGAPORE"
+    },
+    "kaohsiung": {
+      "en": {
+        "default": "Kaohsiung"
+      },
+      "zh-TW": {},
+      "zh-CN": {},
+      "filePath": "templates/Kaohsiung.html",
+      "country": "TAIWAN"     
+    }
+  }
+}

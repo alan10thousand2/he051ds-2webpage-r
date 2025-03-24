@@ -1,0 +1,292 @@
+<style>
+  .contact .breadcrumb-item:nth-child(1) {
+    color: var(--secondary-color);
+  }
+  section article {
+    margin-bottom: 15px;
+  }
+  #contact-list {
+    display: none;
+  }
+  .card .card-header h5 {
+    color: white;
+  }
+  /* button[type="reset"]:hover {
+    background-color: #f9f9f9;
+  } */
+  label.is-required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+    font-size: 1rem;
+    /* customize relative 可單獨使用 */
+    position: relative;
+    top: 4px;
+  }
+</style>
+<div class="row">
+  <div class="col-md-12 contact">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Contact</a></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <!-- <h1>Contact</h1> -->
+    <section id="contact-form">
+      <!-- <h2>Contact</h2> -->
+      <article>
+        <p>
+          Once you have submitted an email, a confirmation letter will be
+          automatically sent to your email address. Please be sure to click on
+          this confirmation message within 7 days.
+        </p>
+      </article>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-text">Write email</h5>
+          </div>
+          <div class="card-body">
+            <div class="errorText" id="errorContact"></div>
+            <form
+              action=""
+              id="writeEmail"
+              method="post"
+              class="form-horizontal"
+            >
+              <div class="form-group row">
+                <label class="col-sm-4 ta is-required" for="subject"
+                  ><strong>Subject</strong></label
+                >
+                <div class="col-sm-6 col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your subject"
+                    id="cf-subject"
+                    name="subject"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 ta" for="content"
+                  ><strong>Content</strong></label
+                >
+                <div class="col-sm-6">
+                  <textarea
+                    class="form-control"
+                    placeholder="Enter your contents"
+                    id="cf-content"
+                    name="content"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 ta is-required" for="email"
+                  ><strong>Email</strong></label
+                >
+                <div class="col-sm-6 col-md-5">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email address"
+                    id="cf-email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8">
+                  <p>
+                    Note: The system will send a confirmation letter to the
+                    designated email address. Please ensure that you have
+                    included a correct email address, and exercise care in terms
+                    of the email system being used. If you do not see a
+                    confirmation letter in your inbox, please check to see if it
+                    has been diverted to your spam folder. You can also try to
+                    re-send your message using a different email account.
+                  </p>
+                  <br />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 ta is-required" for="name"
+                  ><strong>Name</strong></label
+                >
+                <div class="col-sm-6 col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    id="cf-name"
+                    name="name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row contact-gender">
+                <label class="col-sm-4 ta is-required"
+                  ><strong>Gender</strong></label
+                >
+                <div class="col-sm-8 col-md-6">
+                  <div class="row">
+                    <div class="radio-inline col-sm-6">
+                      <input
+                        type="radio"
+                        class="form-control"
+                        id="cf-genderMale"
+                        name="gender"
+                        value="M"
+                        required
+                      />
+                      <label><span class="male">Male</span></label>
+                    </div>
+                    <div class="radio-inline col-sm-6">
+                      <input
+                        type="radio"
+                        class="form-control"
+                        id="cf-genderFemale"
+                        name="gender"
+                        value="F"
+                        required
+                      />
+                      <label><span class="female">Female</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row contact-btns">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <button
+                        class="btn btn-secondary"
+                        type="reset"
+                        title="Empty all fields."
+                        id="resetContact"
+                      >
+                        Reset
+                      </button>
+                    </div>
+                    <div class="col-sm-6">
+                      <button
+                        class="btn btn-warning"
+                        type="submit"
+                        id="submitContact"
+                        onclick="contactWriteEmail(document.getElementById('cf-email').value);return false;"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="card-footer">
+          </div> -->
+        </div>
+      </div>
+      <p style="color: transparent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        illum? Natus molestiae ex eaque consectetur iure quis? Quod deserunt
+        inventore aliquam reiciendis nobis distinctio molestias autem sunt
+        exercitationem natus cupiditate reprehenderit enim voluptate dicta
+        aspernatur nesciunt, consectetur accusamus pariatur laboriosam esse odit
+        nihil officia. Molestiae, debitis architecto labore unde nemo qui beatae
+        aut quo molestias, voluptatem illum, deleniti pariatur dicta officiis.
+        Recusandae maiores veritatis sequi enim? Incidunt voluptates ea veniam
+        sapiente ipsum blanditiis accusamus ipsam itaque consequatur. Totam,
+        fugit? Provident totam at mollitia sint ut eos nobis inventore odio
+        doloremque?
+      </p>
+    </section>
+
+    <section id="contact-list">
+      <h2></h2>
+      <article>
+        <p></p>
+      </article>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h5>Unconfirmed Case Inquiries</h5>
+          </div>
+          <div class="card-body">
+            <p>
+              If a case is not confirmed within 7 days, it will be considered
+              invalid and will not be accepted by the Administration. To ensure
+              the privacy of responses, only the few words of the "Last Name,"
+              "Subject" and "Email" lines are displayed for unconfirmed cases.
+            </p>
+          </div>
+          <!-- <div class="card-footer"></div> -->
+        </div>
+      </div>
+      <p style="color: transparent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        illum? Natus molestiae ex eaque consectetur iure quis? Quod deserunt
+        inventore aliquam reiciendis nobis distinctio molestias autem
+      </p>
+    </section>
+  </div>
+</div>
+
+<div style="text-align: center; display: none">
+  <span>
+    <i
+      id="triggerUnconfirmedButton"
+      style="cursor: pointer"
+      class="fas fa-user"
+      data-toggle="modal"
+      data-target="#UnconfirmedContactModal"
+    ></i>
+  </span>
+</div>
+<div
+  class="modal fade"
+  id="UnconfirmedContactModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="UnconfirmedContactLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="UnconfirmedContactLabel">Successfully</h5>
+        <button
+          class="close"
+          type="button"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span
+            >Successfully,thanks for your suggestions! The system will send a
+            confirm email to your Email (</span
+          >
+          <strong><span id="senderContact"></span></strong>
+          <span>) in 3-5 mintues, please check it and commit this case</span>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-close" type="button" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
