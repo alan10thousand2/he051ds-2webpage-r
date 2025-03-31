@@ -311,8 +311,9 @@
     padding: 15px;
     background-color: white;
     display: grid;
-    grid-template-columns: 2fr, 2fr, 2fr, 2fr, 2fr;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-columns: repeat(9, 1fr);
+
+    grid-template-rows: repeat(6, 1fr);
     grid-gap: 1px;
     color: transparent;
     border-radius: 8px;
@@ -320,63 +321,63 @@
 
   @media (min-width: 500px) {
     .photo-frame {
-      min-height: 1100px;
+      min-height: 700px;
       width: 100%;
     }
   }
 
   @media (min-width: 550px) {
     .photo-frame {
-      min-height: 1250px;
+      min-height: 800px;
       width: 100%;
     }
   }
 
   @media (min-width: 600px) {
     .photo-frame {
-      min-height: 1400px;
+      min-height: 900px;
       width: 100%;
     }
   }
 
   @media (min-width: 650px) {
     .photo-frame {
-      min-height: 1500px;
+      min-height: 1000px;
       width: 100%;
     }
   }
 
   @media (min-width: 699.98px) {
     .photo-frame {
-      min-height: 1600px;
+      min-height: 1000px;
       width: 100%;
     }
   }
 
   @media (min-width: 750px) {
     .photo-frame {
-      min-height: 1700px;
+      min-height: 1100px;
       width: 100%;
     }
   }
 
   @media (min-width: 820px) {
     .photo-frame {
-      min-height: 1800px;
+      min-height: 1100px;
       width: 100%;
     }
   }
 
   @media (min-width: 1100px) {
     .photo-frame {
-      min-height: 1900px;
+      min-height: 1200px;
       width: 100%;
     }
   }
 
   @media (min-width: 1200px) {
     .photo-frame {
-      min-height: 2000px;
+      min-height: 1300px;
       width: 100%;
     }
   }
@@ -395,7 +396,7 @@
     background: url("./img/zhejiang/album/201908261930373237.jpg") center/cover
       no-repeat;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 2;
   }
@@ -403,26 +404,27 @@
   .photo-3 {
     background: url("./img/zhejiang/album/aditya-romansa-m6p4lqWxfy0-unsplash.jpg")
       center/cover no-repeat;
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 7;
+    grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
   .photo-5 {
-    background: url("./img/zhejiang/album/zhengfan-yang-NF93z-f2ye8-unsplash.jpg")
+    background: url("./img/zhejiang/album/steve-long-NEKj44vMT5g-unsplash.jpg")
       center/cover no-repeat;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 8;
+
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 7;
   }
 
   .photo-7 {
     background: url("./img/zhejiang/album/stefan-wagener-QM8nxL1X8mE-unsplash.jpg")
       center/cover no-repeat;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -430,76 +432,65 @@
   .photo-9 {
     background: url("./img/zhejiang/album/yu-wang-l2HkdiANeVg-unsplash.jpg")
       center/cover no-repeat;
-    grid-column-start: 3;
-    grid-column-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 3;
   }
 
   .photo-11 {
-    background: url("./img/zhejiang/album/zhejiang_6.jpg") center/cover
-      no-repeat;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
   }
 
   /* 13 over 5 for 15*/
   .photo-13 {
-    background: url("./img/zhejiang/album/zhimai-zhang-satNyOd77Jg-unsplash.jpg")
+    background: url("./img/zhejiang/album/hu-chen-VRw5nnIEBxs-unsplash.jpg")
       center/cover no-repeat;
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 7;
   }
 
   /* 15 over 13 */
   .photo-15 {
-    background: url("./img/zhejiang/album/steve-long-NEKj44vMT5g-unsplash.jpg")
+    background: url("./img/zhejiang/album/diem-nhi-nguyen-28J8dhNYL2U-unsplash.jpg")
       center/cover no-repeat;
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 10;
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: 5;
   }
 
   .photo-17 {
-    background: url("./img/zhejiang/album/steve-long-NEKj44vMT5g-unsplash.jpg")
-      center/cover no-repeat;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
   }
 
   /* 19 over 15 */
   .photo-19 {
-    background: url("./img/zhejiang/album/dyana-wing-so-5_yAP8OtYNc-unsplash.jpg")
-      center/cover no-repeat;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 8;
   }
 
   .photo-21 {
-    background: url("./img/zhejiang/album/hu-chen-VRw5nnIEBxs-unsplash.jpg")
-      center/cover no-repeat;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 8;
-    grid-row-end: 10;
   }
 
   .photo-23 {
-    background: url("./img/zhejiang/album/diem-nhi-nguyen-28J8dhNYL2U-unsplash.jpg")
+  }
+
+  .photo-24 {
+    background: url("./img/zhejiang/album/zhejiang_6.jpg") center/cover
+      no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+
+  .photo-25 {
+    background: url("./img/a050d6721476441abbbd9ca536697a1e-free.png")
       center/cover no-repeat;
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 8;
-    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-color: transparent;
   }
 </style>
 <!-- breadcrumb -->
@@ -528,30 +519,41 @@
     <!-- <div class="photo photo-8">8</div> -->
     <div class="photo photo-9">9</div>
     <!-- <div class="photo photo-10">10</div> -->
-    <div class="photo photo-11">11</div>
+    <!-- <div class="photo photo-11">11</div> -->
     <!-- <div class="photo photo-12">12</div> -->
     <div class="photo photo-13">13</div>
     <!-- <div class="photo photo-14">14</div> -->
     <div class="photo photo-15">15</div>
     <!-- <div class="photo photo-16">16</div> -->
-    <div class="photo photo-17">17</div>
+    <!-- <div class="photo photo-17">17</div> -->
     <!-- <div class="photo photo-18">18</div> -->
-    <div class="photo photo-19">19</div>
+    <!-- <div class="photo photo-19">19</div> -->
     <!-- <div class="photo photo-20">20</div> -->
-    <div class="photo photo-21">21</div>
+    <!-- <div class="photo photo-21">21</div> -->
     <!-- <div class="photo photo-22">22</div> -->
-    <div class="photo photo-23">23</div>
+    <!-- <div class="photo photo-23">23</div> -->
+
+    <div class="photo photo-24">24</div>
+
+    <div class="photo photo-25">
+      25
+      <!-- <img
+        src="./img/a050d6721476441abbbd9ca536697a1e-free.png"
+        alt="start"
+        width="100%"
+        height="auto"
+      /> -->
+    </div>
 
     <!-- 
-    <div class="photo photo-24">24</div>
-    <div class="photo photo-25">25</div>
     <div class="photo photo-26">26</div>
     <div class="photo photo-27">27</div>
     <div class="photo photo-28">28</div>
     <div class="photo photo-29">29</div>
     <div class="photo photo-30">30</div>
     <div class="photo photo-31">31</div>
-    <div class="photo photo-32">32</div> -->
+    <div class="photo photo-32">32</div>
+     -->
   </section>
 
   <section class="nl">
