@@ -23,6 +23,12 @@
     position: relative;
     top: 4px;
   }
+  .errorText {
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+  }
 </style>
 <div class="row">
   <div class="col-md-12 contact">
@@ -51,7 +57,7 @@
             <h5 class="card-text">Write email</h5>
           </div>
           <div class="card-body">
-            <div class="errorText" id="errorContact"></div>
+            <div class="errorText"></div>
             <form
               action=""
               id="writeEmail"
@@ -135,7 +141,7 @@
                 <label class="col-sm-4 ta is-required"
                   ><strong>Gender</strong></label
                 >
-                <div class="col-sm-8 col-md-6">
+                <div class="col-sm-8 col-md-6" id="cf-gender">
                   <div class="row">
                     <div class="radio-inline col-sm-6">
                       <input
@@ -179,7 +185,7 @@
                     <div class="col-sm-6">
                       <button
                         class="btn btn-warning"
-                        type="submit"
+                        type="button"
                         id="submitContact"
                         onclick="contactWriteEmail(document.getElementById('cf-email').value);return false;"
                       >
@@ -190,6 +196,7 @@
                 </div>
               </div>
             </form>
+            <div class="errorText"></div>
           </div>
           <!-- <div class="card-footer">
           </div> -->
@@ -274,12 +281,12 @@
       </div>
       <div class="modal-body">
         <p>
-          <span
-            >Successfully,thanks for your suggestions! The system will send a
+          <!-- <span
+            >Successfully, thanks for your suggestions! The system will send a
             confirm email to your Email (</span
           >
           <strong><span id="senderContact"></span></strong>
-          <span>) in 3-5 mintues, please check it and commit this case</span>
+          <span>) in 3-5 mintues, please check it and commit this case</span> -->
         </p>
       </div>
       <div class="modal-footer">
