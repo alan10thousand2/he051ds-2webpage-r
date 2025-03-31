@@ -35,6 +35,14 @@
       "h1": "Contact"
     },
     "cf": {
+      "error-message": {
+        "subject": "* The subject field cannot be empty.",
+        "email": "* The email address field cannot be empty.",
+        "name": "* The name field cannot be empty.",
+        "gender": "* Gender is required.",
+        "script": "Script or special character is not allowed.",
+        "email-formatting": "Please enter a valid email."
+      },
       "a-p": "Once you have submitted an email, a confirmation letter will be automatically sent to your email address. Please be sure to click on this confirmation message within 7 days.",
       "ch-h5": "Write email",
       "cb-f-l-subject": "Subject",
@@ -64,6 +72,7 @@
       "mh-h5": "Successfully",
       "mb-t-1": "Successfully, thanks for your suggestions! The system will send a confirm email to your Email",
       "mb-t-2": "in 3-5 mintues, please check it and commit this case",
+      "mb-p": "Successfully, thanks for your suggestions! The system will send a confirm email to your Email %{senderContact} in 3-5 mintues, please check it and commit this case",
       "mf-btn": {
         "close": "Close"
       }
