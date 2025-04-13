@@ -372,17 +372,25 @@
     text-transform: capitalize;
     letter-spacing: 0.25rem;
     color: white;
+    padding-left: 5px;
+    align-items: center;
+  }
+
+  .home-social li {
+    display: block;
+    align-items: center;
   }
 
   #content-wrapper > main > div.default > ul > li {
     list-style: none;
   }
-  .home-social a {
-    font-size: 1.5rem;
+  .home-social li a {
+    font-size: 1rem;
     margin-right: 15px;
     color: black;
+    align-items: center;
   }
-  .home-social a:hover {
+  .home-social li a:hover {
     color: gray;
   }
 </style>
@@ -404,20 +412,36 @@
   <ul class="home-social">
     <li>
       <a
-        href="https://www.facebook.com/profile.php?id=100063864763108&sk=photos"
+        href="https://www.linkedin.com/in/alan-chan-4aa760131/recent-activity/all/"
         target="_blank"
-        ><i class="fa-brands fa-facebook"></i>
+      >
+        <!-- <i class="fa-brands fa-linkedin"></i> -->
+        <img height="30px" width="auto" src="../img/linkedin_icon.png" />
       </a>
     </li>
     <li>
-      <a href="https://x.com/27953509" target="_blank"
-        ><i class="fa-brands fa-x-twitter"></i
-      ></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100063864763108&sk=photos"
+        target="_blank"
+      >
+        <!-- <i class="fa-brands fa-facebook"></i> -->
+        <img height="55px" width="auto" src="../img/facebook_icon.png" />
+      </a>
+    </li>
+    <li>
+      <a href="https://x.com" target="_blank">
+        <!-- <i class="fa-brands fa-x-twitter"></i> -->
+        <img
+          height="30px"
+          width="auto"
+          src="../img/33db85327ef3dce38c89b81b5b020005.png"
+        />
+      </a>
     </li>
     <li>
       <a href="https://www.instagram.com/alan10thousand2/" target="_blank"
-        ><i class="fa-brands fa-instagram"></i
-      ></a>
+        ><img height="35px" width="auto" src="../img/instagram_icon.png" />
+      </a>
     </li>
   </ul>
   <!-- group a -->
@@ -426,7 +450,7 @@
     <section class="tokyo">
       <div class="image">
         <p class="outer">
-          <a href="#" class="inner" onclick="hRemoteClick('tokyo');"
+          <a href="#" class="inner" onclick="hrClick('tokyo');"
             >Explore Tokyo</a
           >
         </p>
@@ -438,6 +462,15 @@
           with a wide range of entertainment activities and amusement places,
           travelers can fully enjoy the pleasures of shopping and entertainment.
         </p>
+        <div style="text-align: center">
+          <button
+            class="btn btn-primary"
+            id="tokyoBtn"
+            onclick="lp('contact', '我想了解東京旅行團的行程安排和價格，請提供相關資料。謝謝！');"
+          >
+            了解更多驚喜資訊！
+          </button>
+        </div>
       </div>
     </section>
     <!-- /.tokyo -->
@@ -451,10 +484,19 @@
           and old neighborhoods, offering a perfect blend of modernity and
           tradition.
         </p>
+        <div style="text-align: center">
+          <button
+            class="btn btn-primary"
+            id="kaohsiungBtn"
+            onclick="lp('contact', '請問高雄旅行團的詳細資訊有哪些？包含行程、餐食以及住宿安排。');"
+          >
+            探索更多，機會有限！
+          </button>
+        </div>
       </div>
       <div class="image">
         <p class="outer">
-          <a href="#" class="inner" onclick="hRemoteClick('kaohsiung');"
+          <a href="#" class="inner" onclick="hrClick('kaohsiung');"
             >Explore Kaohsiung</a
           >
         </p>
@@ -469,7 +511,7 @@
     <section class="singapore">
       <div class="image">
         <p class="outer">
-          <a href="#" class="inner" onclick="hRemoteClick('singapore');"
+          <a href="#" class="inner" onclick="hrClick('singapore');"
             >Explore Singapore</a
           >
         </p>
@@ -482,6 +524,15 @@
           Gardens. Travelers can enjoy the tranquility of nature amid the
           bustling city.
         </p>
+        <div style="text-align: center">
+          <button
+            class="btn btn-primary"
+            id="singaporeBtn"
+            onclick="lp('contact', '想請教新加坡旅行團的費用及行程特色，有沒有特別推薦的活動？');"
+          >
+            點此獲取專屬優惠！
+          </button>
+        </div>
       </div>
     </section>
     <!-- /.singapore -->
@@ -493,10 +544,19 @@
           Huangshan and Guilin, and the snowy plateau of Tibet, is truly
           captivating and makes people reluctant to leave.
         </p>
+        <div style="text-align: center">
+          <button
+            class="btn btn-primary"
+            id="zhejiangBtn"
+            onclick="lp('contact', '能否提供浙江旅行團的行程亮點和報名方式？謝謝您的協助！');"
+          >
+            立即查看詳情！
+          </button>
+        </div>
       </div>
       <div class="image">
         <p class="outer">
-          <a href="#" class="inner" onclick="hRemoteClick('zhejiang');"
+          <a href="#" class="inner" onclick="hrClick('zhejiang');"
             >Explore Zhejiang</a
           >
         </p>

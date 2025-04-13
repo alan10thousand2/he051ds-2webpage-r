@@ -258,19 +258,23 @@
     },
     "tokyo": {
       "outer-a": "Explore Tokyo",
-      "text-p": "Cities like Tokyo and Osaka are shopping paradises and entertainment hubs. From high-end department stores to unique specialty shops, along with a wide range of entertainment activities and amusement places, travelers can fully enjoy the pleasures of shopping and entertainment."
+      "text-p": "Cities like Tokyo and Osaka are shopping paradises and entertainment hubs. From high-end department stores to unique specialty shops, along with a wide range of entertainment activities and amusement places, travelers can fully enjoy the pleasures of shopping and entertainment.",
+      "text-btn": "Learn more surprise information!"
     },
     "kaohsiung": {
       "outer-a": "Explore Kaohsiung",
-      "text-p": "Major cities in Taiwan, such as Taipei and Kaohsiung, are highly modernized, with towering skyscrapers and advanced technology. However, within these cities, one can also find traditional markets and old neighborhoods, offering a perfect blend of modernity and tradition."
+      "text-p": "Major cities in Taiwan, such as Taipei and Kaohsiung, are highly modernized, with towering skyscrapers and advanced technology. However, within these cities, one can also find traditional markets and old neighborhoods, offering a perfect blend of modernity and tradition.",
+      "text-btn": "Explore more, opportunities are limited!"
     },
     "singapore": {
       "outer-a": "Explore Singapore",
-      "text-p": "Singapore boasts a modern urban landscape, including Marina Bay Sands, the Singapore Flyer, and Gardens by the Bay. At the same time, it has beautiful natural scenery such as Sentosa, the Zoo, and the Botanic Gardens. Travelers can enjoy the tranquility of nature amid the bustling city."
+      "text-p": "Singapore boasts a modern urban landscape, including Marina Bay Sands, the Singapore Flyer, and Gardens by the Bay. At the same time, it has beautiful natural scenery such as Sentosa, the Zoo, and the Botanic Gardens. Travelers can enjoy the tranquility of nature amid the bustling city.",
+      "text-btn": "Click here to get exclusive offers!"
     },
     "zhejiang": {
       "outer-a": "Explore Zhejiang",
-      "text-p": "The natural scenery in China, such as the picturesque landscapes of Huangshan and Guilin, and the snowy plateau of Tibet, is truly captivating and makes people reluctant to leave."
+      "text-p": "The natural scenery in China, such as the picturesque landscapes of Huangshan and Guilin, and the snowy plateau of Tibet, is truly captivating and makes people reluctant to leave.",
+      "text-btn": "Check out the details now!"
     }
   }
 }
