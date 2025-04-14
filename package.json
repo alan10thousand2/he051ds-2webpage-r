@@ -1,0 +1,49 @@
+{
+  "name": "tkc-webpage",
+  "version": "1.0.0",
+  "description": "Love adventure? Longing to escape the daily routine? Hot Travel carefully selects unique travel experiences for you, from off-the-beaten-path secrets to popular check-in spots, to satisfy all your travel fantasies. Explore now and discover your wonderful journey!",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alan10thousand2/he051ds-2webpage-rollout.git"
+  },
+  "keywords": [
+    "We",
+    "carefully",
+    "select",
+    "unique",
+    "travel",
+    "experiences",
+    "for",
+    "you",
+    "from",
+    "off-the-beaten-path",
+    "secrets",
+    "to",
+    "popular",
+    "check-in",
+    "spots",
+    "to",
+    "satisfy",
+    "all",
+    "your",
+    "travel",
+    "fantasies.",
+    "Explore",
+    "now",
+    "and",
+    "discover",
+    "your",
+    "wonderful",
+    "journey!"
+  ],
+  "author": "T.K.Chan <alan10thousand2@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alan10thousand2/he051ds-2webpage-rollout/issues"
+  },
+  "homepage": "https://alan10thousand2/he051ds-2webpage-rollout"
+}
