@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alan10thousand2/he051ds-2webpage-rollout.git"
+    "url": "git+https://github.com/alan10thousand2/he051ds-2webpage-r.git"
   },
   "keywords": [
     "We",
@@ -43,7 +43,7 @@
   "author": "T.K.Chan <alan10thousand2@hotmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alan10thousand2/he051ds-2webpage-rollout/issues"
+    "url": "https://github.com/alan10thousand2/he051ds-2webpage-r/issues"
   },
-  "homepage": "https://alan10thousand2/he051ds-2webpage-rollout"
+  "homepage": "https://alan10thousand2/he051ds-2webpage-r"
 }
