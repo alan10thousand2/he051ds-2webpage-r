@@ -1,0 +1,264 @@
+<style>
+  .contact .breadcrumb-item:nth-child(1) {
+    color: var(--secondary-color);
+  }
+  section article {
+    margin-bottom: 15px;
+  }
+  #contact-list {
+    display: none;
+  }
+  .card .card-header h5 {
+    color: white;
+  }
+  /* button[type="reset"]:hover {
+    background-color: #f9f9f9;
+  } */
+  label.is-required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+    font-size: 1rem;
+    /* customize relative 可單獨使用 */
+    position: relative;
+    top: 4px;
+  }
+  .errorText {
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+  }
+</style>
+<div class="row">
+  <div class="col-md-12 contact">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#"></a></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <!-- <h1>Contact</h1> -->
+    <section id="contact-form">
+      <!-- <h2>Contact</h2> -->
+      <article>
+        <p></p>
+      </article>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-text"></h5>
+          </div>
+          <div class="card-body">
+            <div class="errorText"></div>
+            <form
+              action=""
+              id="writeEmail"
+              method="post"
+              class="form-horizontal"
+            >
+              <div class="form-group row">
+                <label class="col-sm-4 ta is-required" for="subject"
+                  ><strong></strong
+                ></label>
+                <div class="col-sm-6 col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your subject"
+                    id="cf-subject"
+                    name="subject"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 ta" for="content"
+                  ><strong></strong
+                ></label>
+                <div class="col-sm-6">
+                  <textarea
+                    class="form-control"
+                    placeholder="Enter your contents"
+                    id="cf-content"
+                    name="content"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 ta is-required" for="email"
+                  ><strong></strong
+                ></label>
+                <div class="col-sm-6 col-md-5">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email address"
+                    id="cf-email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8">
+                  <p></p>
+                  <br />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 ta is-required" for="name"
+                  ><strong></strong
+                ></label>
+                <div class="col-sm-6 col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    id="cf-name"
+                    name="name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row contact-gender">
+                <label class="col-sm-4 ta is-required"><strong></strong></label>
+                <div class="col-sm-8 col-md-6" id="cf-gender">
+                  <div class="row">
+                    <div class="radio-inline col-sm-6">
+                      <input
+                        type="radio"
+                        class="form-control"
+                        id="cf-genderMale"
+                        name="gender"
+                        value="M"
+                        required
+                      />
+                      <label><span class="male"></span></label>
+                    </div>
+                    <div class="radio-inline col-sm-6">
+                      <input
+                        type="radio"
+                        class="form-control"
+                        id="cf-genderFemale"
+                        name="gender"
+                        value="F"
+                        required
+                      />
+                      <label><span class="female"></span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row contact-btns">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <button
+                        class="btn btn-secondary"
+                        type="reset"
+                        title="Empty all fields."
+                        id="resetContact"
+                      >
+                        Reset
+                      </button>
+                    </div>
+                    <div class="col-sm-6">
+                      <button
+                        class="btn btn-warning"
+                        type="button"
+                        id="submitContact"
+                        onclick="contactWriteEmail(document.getElementById('cf-email').value);return false;"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="errorText"></div>
+          </div>
+          <!-- <div class="card-footer">
+          </div> -->
+        </div>
+      </div>
+      <p style="color: transparent"></p>
+    </section>
+
+    <section id="contact-list">
+      <h2></h2>
+      <article>
+        <p></p>
+      </article>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h5></h5>
+          </div>
+          <div class="card-body">
+            <p></p>
+          </div>
+          <!-- <div class="card-footer"></div> -->
+        </div>
+      </div>
+      <p style="color: transparent"></p>
+    </section>
+  </div>
+</div>
+
+<div style="text-align: center; display: none">
+  <span>
+    <i
+      id="triggerUnconfirmedButton"
+      style="cursor: pointer"
+      class="fas fa-user"
+      data-toggle="modal"
+      data-target="#UnconfirmedContactModal"
+    ></i>
+  </span>
+</div>
+<div
+  class="modal fade"
+  id="UnconfirmedContactModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="UnconfirmedContactLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="UnconfirmedContactLabel"></h5>
+        <button
+          class="close"
+          type="button"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <!-- <span
+            >Successfully, thanks for your suggestions! The system will send a
+            confirm email to your Email (</span
+          >
+          <strong><span id="senderContact"></span></strong>
+          <span>) in 3-5 mintues, please check it and commit this case</span> -->
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-close" type="button" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

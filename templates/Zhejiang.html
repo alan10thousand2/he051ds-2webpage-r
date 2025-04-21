@@ -1,0 +1,706 @@
+<style>
+  /* keeping */
+  .zhejiang .breadcrumb:nth-child(1) {
+    color: var(--secondary-color);
+  }
+
+  .china-zhejiang {
+    background: black;
+    background: url("") center/cover no-repeat;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  #china-zhejiang {
+    transition: background-image 3s ease-in-out;
+  }
+
+  .china-zhejiang {
+    padding-right: 0px;
+    border-radius: 8px;
+    margin-left: 15px;
+    right: 3px;
+  }
+
+  .china-zhejiang,
+  .img-s {
+    box-shadow: var(--country-box-shadow);
+  }
+
+  .fs-img {
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+    position: relative;
+    min-height: 600px;
+  }
+
+  .fs-img .img-s {
+    margin-top: 15px;
+    max-width: 300px;
+  }
+
+  .img-s {
+    position: absolute;
+    margin-bottom: 5px;
+    bottom: -5px;
+
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.1)
+    );
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .img-a {
+    max-width: 75%;
+    min-width: 450px;
+  }
+
+  .img-a p {
+    color: white;
+    font-size: 1.5em;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    margin-right: 15px;
+    border-radius: 8px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+
+  .img-s-a {
+    padding: 5px 0 0 0;
+  }
+
+  .img-s-a,
+  .img-s-frame {
+    opacity: 1;
+  }
+
+  .img-s-a {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  .img-s-a h6 {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    color: var(--primary-color);
+  }
+
+  .img-s-frame {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 5px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-s-frame .f-body {
+    overflow: hidden;
+    background-color: black;
+    border-radius: 8px;
+  }
+
+  .img-s-frame .f-body img {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .img-s-frame .f-body img:hover {
+    transform: scale(1.5);
+  }
+
+  .fr {
+    float: right;
+  }
+
+  .fl {
+    float: left;
+  }
+
+  /*NL*/
+  section.nl {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--food-background);
+    box-shadow: var(--other-box-shadow);
+  }
+  section.nl .nl-a p {
+    padding: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  @media (max-width: 474.98px) {
+    #content-wrapper > main > div.content > section.nl > div > iframe {
+      height: 380px;
+    }
+  }
+
+  @media (min-width: 475px) and (max-width: 575.98px) {
+    #content-wrapper > main > div.content > section.nl > div > iframe {
+      height: 380px;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    #content-wrapper > main > div.content > section.nl > div > iframe {
+      height: 380px;
+    }
+  }
+
+  /* ts */
+  section.ts {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--food-background);
+    box-shadow: var(--other-box-shadow);
+  }
+  section.ts .ts-a p {
+    padding: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  section.ts .ts-food {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    place-content: space-around;
+    place-items: center;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  section.ts .ts-food .ts-f-item {
+    display: flex;
+    width: 145px;
+    height: 145px;
+    border: 1px solid var(--food-item-border);
+    background-color: transparent;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  section.ts .ts-food .ts-f-item:hover {
+    border: 3px solid var(--secondary-color);
+  }
+  section.ts .ts-food .ts-f-item img:hover {
+    transform: scale(1.5);
+  }
+
+  /* ss */
+  .content .row.c-row.second-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .map {
+    margin-left: 15px;
+  }
+
+  .content .c-row .map {
+    background: var(--map-background);
+  }
+
+  section.map {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .map-a p {
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .map {
+    padding: 15px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: var(--other-box-shadow);
+  }
+
+  .map-frame {
+    text-align: center;
+    overflow: hidden;
+  }
+
+  section.map .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  @media (max-width: 485px) {
+    .img-s.fl {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .content .row.c-row.second-row {
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+    .content .row.c-row.first-row {
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  @media (min-width: 475px) and (max-width: 500px) {
+    #content-wrapper {
+      max-width: 485px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .img-s.fl {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .img-s.fl {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .map {
+      margin-right: 15px;
+    }
+
+    .content .row.c-row.second-row {
+      padding-right: 30px;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
+
+  /*photo-frame*/
+
+  .photo-frame {
+    padding: 15px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1px;
+    color: transparent;
+    border-radius: 8px;
+  }
+
+  @media (min-width: 500px) {
+    .photo-frame {
+      min-height: 700px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 550px) {
+    .photo-frame {
+      min-height: 800px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .photo-frame {
+      min-height: 900px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 650px) {
+    .photo-frame {
+      min-height: 1000px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 699.98px) {
+    .photo-frame {
+      min-height: 1000px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .photo-frame {
+      min-height: 1100px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 820px) {
+    .photo-frame {
+      min-height: 1100px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .photo-frame {
+      min-height: 1200px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .photo-frame {
+      min-height: 1300px;
+      width: 100%;
+    }
+  }
+
+  .photo {
+    background-color: lightgray;
+    text-align: center;
+    border: 0px solid white;
+  }
+
+  .photo:hover {
+    border: 3px solid var(--secondary-color);
+  }
+
+  .photo-1 {
+    background: url("./img/zhejiang/album/201908261930373237.jpg") center/cover
+      no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .photo-3 {
+    background: url("./img/zhejiang/album/aditya-romansa-m6p4lqWxfy0-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .photo-5 {
+    background: url("./img/zhejiang/album/steve-long-NEKj44vMT5g-unsplash.jpg")
+      center/cover no-repeat;
+
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+
+  .photo-7 {
+    background: url("./img/zhejiang/album/stefan-wagener-QM8nxL1X8mE-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .photo-9 {
+    background: url("./img/zhejiang/album/yu-wang-l2HkdiANeVg-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .photo-11 {
+  }
+
+  /* 13 over 5 for 15*/
+  .photo-13 {
+    background: url("./img/zhejiang/album/hu-chen-VRw5nnIEBxs-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+
+  /* 15 over 13 */
+  .photo-15 {
+    background: url("./img/zhejiang/album/diem-nhi-nguyen-28J8dhNYL2U-unsplash.jpg")
+      center/cover no-repeat;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+
+  .photo-17 {
+  }
+
+  /* 19 over 15 */
+  .photo-19 {
+  }
+
+  .photo-21 {
+  }
+
+  .photo-23 {
+  }
+
+  .photo-24 {
+    background: url("./img/zhejiang/album/zhejiang_6.jpg") center/cover
+      no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+
+  .photo-25 {
+    background: url("./img/a050d6721476441abbbd9ca536697a1e-free.png")
+      center/cover no-repeat;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-color: transparent;
+  }
+</style>
+<!-- breadcrumb -->
+<div class="row">
+  <div class="col-md-12 zhejiang">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#"></a></li>
+        <li class="breadcrumb-item active" aria-current="page"></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<!-- /.breadcrumb -->
+<!-- content -->
+<div class="content">
+  <h1></h1>
+  <section class="photo-frame" id="zhejiang-album">
+    <div class="photo photo-1">1</div>
+    <!-- <div class="photo photo-2">2</div> -->
+    <div class="photo photo-3">3</div>
+    <!-- <div class="photo photo-4">4</div> -->
+    <div class="photo photo-5">5</div>
+    <!-- <div class="photo photo-6">6</div> -->
+    <div class="photo photo-7">7</div>
+    <!-- <div class="photo photo-8">8</div> -->
+    <div class="photo photo-9">9</div>
+    <!-- <div class="photo photo-10">10</div> -->
+    <!-- <div class="photo photo-11">11</div> -->
+    <!-- <div class="photo photo-12">12</div> -->
+    <div class="photo photo-13">13</div>
+    <!-- <div class="photo photo-14">14</div> -->
+    <div class="photo photo-15">15</div>
+    <!-- <div class="photo photo-16">16</div> -->
+    <!-- <div class="photo photo-17">17</div> -->
+    <!-- <div class="photo photo-18">18</div> -->
+    <!-- <div class="photo photo-19">19</div> -->
+    <!-- <div class="photo photo-20">20</div> -->
+    <!-- <div class="photo photo-21">21</div> -->
+    <!-- <div class="photo photo-22">22</div> -->
+    <!-- <div class="photo photo-23">23</div> -->
+
+    <div class="photo photo-24">24</div>
+
+    <!-- <div class="photo photo-25">
+      25
+    </div> -->
+
+    <!-- 
+    <div class="photo photo-26">26</div>
+    <div class="photo photo-27">27</div>
+    <div class="photo photo-28">28</div>
+    <div class="photo photo-29">29</div>
+    <div class="photo photo-30">30</div>
+    <div class="photo photo-31">31</div>
+    <div class="photo photo-32">32</div>
+     -->
+  </section>
+
+  <section class="nl">
+    <article class="nl-a">
+      <p></p>
+    </article>
+    <div class="media">
+      <iframe
+        width="100%"
+        height="600px"
+        src="https://www.youtube.com/embed/FwagwOiUAXw?rel=0&modestbranding=1"
+        title="浙江19个5A景区，你去过几个？"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <div class="row c-row first-row">
+    <div class="col-md-12 china-zhejiang" id="china-zhejiang">
+      <section class="fs">
+        <article class="fs-a"></article>
+        <div class="fs-img">
+          <article class="img-a fr">
+            <p>
+              <strong></strong>
+            </p>
+          </article>
+          <section class="img-s">
+            <article class="img-s-a">
+              <h6></h6>
+            </article>
+            <div class="img-s-frame">
+              <div class="f-body">
+                <img
+                  src="./img/zhejiang/0 (7).jpg"
+                  alt="natural scenery"
+                  title="natural scenery"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="ts">
+    <article class="ts-a">
+      <p></p>
+    </article>
+    <!-- food flex-container -->
+    <div class="ts-food">
+      <div class="ts-f-item">
+        <img
+          src="./img/zhejiang/food/01cdc25dd105e7a8012129e226bfc7.png"
+          alt="food item"
+          width="100%"
+          height="auto"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/zhejiang/food/016c4e5dd106a3a8012053c05452d8.png"
+          alt="food item"
+          width="100%"
+          height="auto"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/zhejiang/food/0180635dd105e5a8012129e22cac2c.png"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/zhejiang/food/01d4e45dd106a4a8012053c0a74273.png"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/zhejiang/food/0126d85dd106a2a8012053c013e551.png"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/zhejiang/food/01e3b35dd105e6a8012053c0b7c1c8.png"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/zhejiang/food/0178d85dd106a1a8012053c084a9ff.png"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/zhejiang/food/010ccf5dd106a5a8012053c0781cb4.png"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+      <div class="ts-f-item">
+        <img
+          src="./img/zhejiang/food/01248a5dd106a3a8012129e2b6ae8e.png"
+          alt="food item"
+          width="auto"
+          height="100%"
+        />
+      </div>
+    </div>
+    <!-- /. food flex-container -->
+  </section>
+
+  <div class="row c-row second-row">
+    <section class="map col-sm-12">
+      <div class="row">
+        <div class="map-a col-sm-12 col-md-12 col-lg-6">
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="map-frame col-sm-12 col-md-12 col-lg-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1497766.2801157164!2d119.74534160291188!3d29.29512883978878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34491234a50accbf%3A0x81ef71c536187cb7!2z5Lit5ZyL5rWZ5rGf55yB!5e0!3m2!1szh-TW!2shk!4v1739665765929!5m2!1szh-TW!2shk"
+            width="100%"
+            height="600px"
+            style="border: 0"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+  <br /><br />
+</div>
+<!-- /. content -->

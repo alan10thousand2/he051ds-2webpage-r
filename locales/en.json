@@ -1,0 +1,280 @@
+{
+  "seoTitles": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact us",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "profile": "Profile",
+    "dashboard": "Dashboard",
+    "japan": "Japan",
+    "tokyo": "Tokyo",
+    "taiwan": "Taiwan",
+    "kaohsiung": "Kaohsiung",
+    "singapore": "Singapore",
+    "china": "China",
+    "zhejiang": "Zhejiang"
+  },
+  "seoKeywords": {
+    "d": "We carefully select unique travel experiences for you, from off-the-beaten-path secrets to popular check-in spots, to satisfy all your travel fantasies. Explore now and discover your wonderful journey!",
+    "register": {}
+  },
+  "seoDescriptions": {
+    "d": "Love adventure? Longing to escape the daily routine? Hot Travel carefully selects unique travel experiences for you, from off-the-beaten-path secrets to popular check-in spots, to satisfy all your travel fantasies. Explore now and discover your wonderful journey!",
+    "register": {}
+  },
+  "about": "About",
+  "contact": {
+    "d": "Contact",
+    "b-i": {
+      "country": "",
+      "district": "Contact"
+    },
+    "c": {
+      "h1": "Contact"
+    },
+    "cf": {
+      "error-message": {
+        "subject": "* The subject field cannot be empty.",
+        "email": "* The email address field cannot be empty.",
+        "name": "* The name field cannot be empty.",
+        "gender": "* Gender is required.",
+        "script": "Script or special character is not allowed.",
+        "email-formatting": "Please enter a valid email."
+      },
+      "a-p": "Once you have submitted an email, a confirmation letter will be automatically sent to your email address. Please be sure to click on this confirmation message within 7 days.",
+      "ch-h5": "Write email",
+      "cb-f-l-subject": "Subject",
+      "cb-f-l-subject-ph": "Enter your subject",
+      "cb-f-l-content": "Content",
+      "cb-f-l-content-ph": "Enter your contents",
+      "cb-f-l-email": "Email",
+      "cb-f-l-email-ph": "Enter your email address",
+      "cb-f-l-note": "Note: The system will send a confirmation letter to the designated email address. Please ensure that you have included a correct email address, and exercise care in terms of the email system being used. If you do not see a confirmation letter in your inbox, please check to see if it has been diverted to your spam folder. You can also try to re-send your message using a different email account.",
+      "cb-f-l-name": "Name",
+      "cb-f-l-name-ph": "Enter your name",
+      "cb-f-l-gender": {
+        "d": "Gender",
+        "m": "Male",
+        "f": "Female"
+      },
+      "cb-f-btn": {
+        "reset": "Reset",
+        "submit": "Submit"
+      }
+    },
+    "cl": {
+      "ch-f5": "Unconfirmed Case Inquiries",
+      "cb-p": "If a case is not confirmed within 7 days, it will be considered invalid and will not be accepted by the Administration. To ensure the privacy of responses, only the few words of the \"Last Name,\" \"Subject\" and \"Email\" lines are displayed for unconfirmed cases."
+    },
+    "modal": {
+      "mh-h5": "Successfully",
+      "mb-t-1": "Successfully, thanks for your suggestions! The system will send a confirm email to your Email",
+      "mb-t-2": "in 3-5 mintues, please check it and commit this case",
+      "mb-p": "Successfully, thanks for your suggestions! The system will send a confirm email to your Email %{senderContact} in 3-5 mintues, please check it and commit this case",
+      "mf-btn": {
+        "close": "Close"
+      }
+    }
+  },
+  "login": "Login",
+  "register": "Register",
+  "logout": "Logout",
+  "profile": "Profile",
+  "dashboard": "Dashboard",
+  "japan": {
+    "d": "JAPAN"
+  },
+  "tokyo": {
+    "se": {
+      "se-a-p": "Cities like Tokyo and Osaka are shopping paradises and entertainment hubs. From high-end department stores to unique specialty shops, along with a wide range of entertainment activities and amusement places, travelers can fully enjoy the pleasures of shopping and entertainment."
+    },
+    "d": "Tokyo",
+    "b-i": {
+      "country": "JAPAN",
+      "district": "Tokyo"
+    },
+    "c": {
+      "h1": "Tokyo"
+    },
+    "fs": {
+      "c-r-c1-alt": "Mount Fuji is located on the border of Shizuoka and Yamanashi Prefectures in Japan, about 100 to 120 kilometers from Tokyo, roughly a 2-hour drive. On clear days, it can even be seen from parts of Tokyo. Visitors can easily plan a day trip to Mount Fuji from Tokyo, especially by using high-speed trains or buses.",
+      "c-r-c2-alt": "Experience art without limits at teamLab Borderless in Tokyo's Azabudai Hills. As the world's first digital art museum, it uses over 520 computers and 470 projectors to create a borderless world. Step into mesmerizing exhibits like the Infinite Crystal World and interactive Sketch Ocean, where each piece reacts to your movements.",
+      "c-r-c3-alt": "Tokyo Skytree, located in Sumida Ward, Tokyo, is the world's tallest self-supporting broadcasting tower at 634 meters. Opened in 2012, it transmits digital signals and is a popular tourist spot with observation decks and a shopping mall, offering stunning city views and, on clear days, sights of Mount Fuji.",
+      "c-r-c4-alt": "Ginza is a famous commercial district in Tokyo's Chuo Ward, celebrated as one of Japan's most bustling shopping paradises.",
+      "c-r-c5-alt": "Shibuya District in Tokyo, Japan, is a bustling area famous for fashion, shopping, and nightlife. Shibuya Crossing, located there, is one of the busiest pedestrian crossings in the world.",
+      "c-r-c6-alt": "This is a Japanese temple located in a forest. The wooden structure and nearby stone lanterns, illuminated by sunlight filtering through the trees, create a serene and sacred atmosphere. Buddhist temples or Shinto shrines are often places for prayer and meditation.",
+      "Fuji": "Mount Fuji is located on the border of Shizuoka and Yamanashi Prefectures in Japan, about 100 to 120 kilometers from Tokyo, roughly a 2-hour drive. On clear days, it can even be seen from parts of Tokyo. Visitors can easily plan a day trip to Mount Fuji from Tokyo, especially by using high-speed trains or buses.",
+      "teamLab": "Experience art without limits at teamLab Borderless in Tokyo's Azabudai Hills. As the world's first digital art museum, it uses over 520 computers and 470 projectors to create a borderless world. Step into mesmerizing exhibits like the Infinite Crystal World and interactive Sketch Ocean, where each piece reacts to your movements.",
+      "Skytree": "Tokyo Skytree, located in Sumida Ward, Tokyo, is the world's tallest self-supporting broadcasting tower at 634 meters. Opened in 2012, it transmits digital signals and is a popular tourist spot with observation decks and a shopping mall, offering stunning city views and, on clear days, sights of Mount Fuji.",
+      "Ginza": "Ginza is a famous commercial district in Tokyo's Chuo Ward, celebrated as one of Japan's most bustling shopping paradises.",
+      "Shibuya": "Shibuya District in Tokyo, Japan, is a bustling area famous for fashion, shopping, and nightlife. Shibuya Crossing, located there, is one of the busiest pedestrian crossings in the world.",
+      "shinto-shrines": "This is a Japanese temple located in a forest. The wooden structure and nearby stone lanterns, illuminated by sunlight filtering through the trees, create a serene and sacred atmosphere. Buddhist temples or Shinto shrines are often places for prayer and meditation."
+    },
+    "ts": {
+      "ts-a": {
+        "p": "Japanese cuisine is diverse and delicious, from sushi and sashimi to ramen and tempura. Street food such as takoyaki and okonomiyaki also captivate and delight, making it hard to resist coming back for more."
+      }
+    },
+    "ss": {
+      "map-p-1": "Tokyo is located in the eastern part of the Kanto Plain, bordering Tokyo Bay. The area consists mainly of flat lowlands, ideal for large-scale urban development, while its network of rivers has historically played key roles in flood control and irrigation, shaping the city's unique landscape.",
+      "map-p-2": "Tokyo's urban area is near the coast, combining coastal terrain with expansive inland plains. This benefits both port and shipping development and provides ample flat space for urban planning.",
+      "map-p-3": "Narita International Airport primarily handles international flights, connecting major cities worldwide and serving as a key gateway for Japan's global air travel.",
+      "map-p-4": "Haneda Airport not only handles busy domestic flights but has also significantly expanded its international routes in recent years. Its close proximity to the city center makes it the preferred gateway for many travelers.",
+      "map-p-5": "Tokyo boasts one of the world's most efficient and comprehensive public transportation systems, including subways, trains, buses, and light rail, that facilitates local commuting as well as convenient access to surrounding areas and airports. The Shinkansen (high-speed rail) further connects Tokyo with major Japanese cities like Osaka and Kyoto, enhancing both international and regional connectivity."
+    }
+  },
+  "taiwan": {
+    "d": "TAIWAN"
+  },
+  "kaohsiung": {
+    "mc": {
+      "mc-a-p": "Major cities in Taiwan, such as Taipei and Kaohsiung, are highly modernized, with towering skyscrapers and advanced technology. However, within these cities, one can also find traditional markets and old neighborhoods, offering a perfect blend of modernity and tradition."
+    },
+    "d": "Kaohsiung",
+    "b-i": {
+      "country": "TAIWAN",
+      "district": "Kaohsiung"
+    },
+    "c": {
+      "h1": "Kaohsiung"
+    },
+    "ts": {
+      "ts-a": {
+        "p": "Taiwanese cuisine is diverse and delicious, with the night market culture being especially famous. Whether it's oyster omelets, beef noodle soup, bubble tea, or xiaolongbao, the food will leave you craving more."
+      }
+    },
+    "fs": {
+      "a-p-s": "Taiwanese people are generally friendly and hospitable, always willing to help travelers. This warmth and friendliness make travelers feel at home. The integration of culture and history, modernity and tradition."
+    },
+    "ss": {
+      "map-p-1": "Taiwan is an island located off the southeastern coast of China, situated in the heart of East Asia. It is flanked by the East China Sea to the north, the Philippine Sea to the east, the Luzon Strait to the south, and the Taiwan Strait to the west.",
+      "map-p-2": "Taiwan is renowned for its stunning natural landscapes, which include towering mountains, lush forests, and pristine beaches. The island boasts a diverse range of climates and ecosystems, from the subtropical plains in the west to the temperate highlands in the east. Taiwan's highest peak, Yushan (Jade Mountain), stands at 3,952 meters, offering breathtaking views and challenging hikes.",
+      "map-p-3": "The island is also home to several picturesque national parks, such as Taroko National Park, known for its marble-walled canyons, waterfalls, and hot springs. Sun Moon Lake, the largest body of water in Taiwan, is another popular destination, offering serene views and a tranquil atmosphere.",
+      "map-p-4": "In addition to its natural beauty, Taiwan is known for its vibrant cities, rich cultural heritage, and warm, welcoming people. The blend of traditional and modern elements creates a unique and dynamic environment, making Taiwan a captivating destination for visitors from around the world."
+    }
+  },
+  "singapore": {
+    "combination": {
+      "combination-a-p": "SINGAPORE boasts a modern urban landscape, including Marina Bay Sands, the Singapore Flyer, and Gardens by the Bay. At the same time, it has beautiful natural scenery such as Sentosa, the Zoo, and the Botanic Gardens. Travelers can enjoy the tranquility of nature amid the bustling city."
+    },
+    "d": "SINGAPORE",
+    "b-i": {
+      "country": "SINGAPORE",
+      "district": "Singapore"
+    },
+    "c": {
+      "h1": "Singapore"
+    },
+    "fs": {
+      "Sri-Mariamman": "Sri Mariamman Temple",
+      "Chinatown": "Chinatown",
+      "Buddha-Tooth-Relic": "Buddha Tooth Relic Temple and Museum",
+      "Supertree-Grove": "Supertree Grove"
+    },
+    "s-ss": {
+      "ss-a": {
+        "p-strong": "SINGAPORE is renowned for its clean and orderly urban environment. The streets are tidy, and public facilities are well-maintained, making people feel comfortable and happy."
+      },
+      "ss-ig": {
+        "g-1": {
+          "desc": "Sri Mariamman Temple"
+        },
+        "g-2": {
+          "desc": "Chinatown"
+        },
+        "g-3": {
+          "desc": "Buddha Tooth Relic Temple and Museum"
+        },
+        "g-4": {
+          "desc": "Supertree Grove"
+        }
+      }
+    },
+    "ts": {
+      "ts-a": {
+        "p": "SINGAPORE is renowned for its diverse cuisine, featuring dishes such as Hainanese chicken rice, chili crab, satay, and roti prata that make one's mouth water. Travelers can enjoy authentic local food at hawker centers, restaurants, and street stalls."
+      }
+    },
+    "ss": {
+      "map-p-1": "Singapore is a small yet highly modern and vibrant city-state located at the southern tip of the Malay Peninsula in Southeast Asia, facing the Johor Strait and the South China Sea. Despite its limited area, Singapore is renowned for its exemplary urban planning and advanced infrastructure, creating a unique, multicultural cityscape where Eastern and Western influences converge and tradition coexists with modernity—from luxurious skyscrapers to charming historic districts.",
+      "map-p-2": "Singapore's terrain is mainly lowland, originally covered by tropical rainforests and wetlands. Due to the scarcity of land, extensive reclamation projects have continuously expanded the urban area. Many coastal regions have been developed through these initiatives, resulting in a compact yet fully functional city.",
+      "map-p-3": "Located near the equator, Singapore experiences a hot, humid tropical climate with stable temperatures year-round and evenly distributed rainfall. Although tropical downpours are common, they foster abundant vegetation and attractive urban greenery. The government emphasizes green spaces and sustainable planning, ensuring that the bustling city retains a natural, refreshing ambience.",
+      "map-p-4": "Leveraging its strategic location, Singapore has become a vital gateway between the East and West. Changi International Airport—often ranked among the world’s best—offers extensive direct international flights and serves as a key transit hub. Additionally, the Port of Singapore is one of the busiest container terminals globally, underscoring the city-state's critical role in global trade.",
+      "map-p-5": "Singapore has a comprehensive MRT, public bus, and LRT system that provides convenient connectivity within and beyond the city. These systems are not only punctual and efficient, but also incorporate smart traffic management technologies.",
+      "map-p-6": "To ease traffic congestion, Singapore was among the first to implement an Electronic Road Pricing (ERP) system. The government also actively promotes green transport initiatives, such as ride-sharing and Car-Free Days, ensuring residents and visitors enjoy an eco-friendly and smooth travel experience.",
+      "map-p-7": "Besides offering direct flights, Singapore engages in regional transportation initiatives—such as high-speed rail and cross-border bus services—establishing itself as a key transport hub in Southeast Asia and beyond."
+    }
+  },
+  "china": {
+    "d": "CHINA"
+  },
+  "zhejiang": {
+    "nl": {
+      "nl-a-p": "The natural scenery in China, such as the picturesque landscapes of Huangshan and Guilin, and the snowy plateau of Tibet, is truly captivating and makes people reluctant to leave."
+    },
+    "d": "Zhejiang",
+    "b-i": {
+      "country": "CHINA",
+      "district": "Zhejiang"
+    },
+    "c": {
+      "h1": "Zhejiang"
+    },
+    "fs": {
+      "fs-img": {
+        "img-a": {
+          "p": "",
+          "p-strong": "Chinese people are generally very warm and hospitable, especially in smaller cities and villages, where travelers often experience a strong sense of hospitality and warmreception."
+        },
+        "img-s-a": {
+          "h6": "The natural scenery in China, such as the picturesque landscapes of Huangshan and Guilin, and the snowy plateau of Tibet, is truly captivating and makes people reluctant to leave."
+        }
+      }
+    },
+    "ts": {
+      "ts-a": {
+        "p": "Chinese cuisine varies greatly by region, from the spicy hotpot of Sichuan to the dim sum of Guangdong. Whether in taste or presentation, these dishes offer travelers a whole new experience."
+      }
+    },
+    "ss": {
+      "map-p-1": "China is a vast and diverse country located in East Asia, bordered by 14 countries and spanning five time zones. It covers an area of approximately 9.6 million square kilometers, making it the fourth largest country in the world by land area. China's terrain is incredibly varied, featuring towering mountain ranges, expansive plains, fertile river basins, and vast deserts. The Himalayas, home to Mount Everest, the highest peak in the world, lie in the southwest, while the Gobi Desert stretches across the north.",
+      "map-p-2": "China is blessed with abundant natural beauty, from the karst landscapes of Guilin to the serene waters of West Lake in Hangzhou. The Yangtze and Yellow Rivers, two of the longest rivers in the world, flow through the country, nurturing its rich ecosystems and agricultural lands. The country also boasts stunning natural wonders such as Zhangjiajie's towering sandstone pillars, Jiuzhaigou's colorful lakes, and the picturesque Li River.",
+      "map-p-3": "In addition to its natural landscapes, China has a long history of harmonizing human development with nature. Ancient practices like Feng Shui and the creation of classical gardens, such as those in Suzhou, reflect the deep cultural appreciation for the environment. Today, China is also making significant efforts to protect its natural heritage through the establishment of national parks and conservation initiatives.",
+      "map-p-4": "From the snow-capped mountains of Tibet to the tropical beaches of Hainan, China's geographical diversity and breathtaking scenery make it a land of unparalleled beauty."
+    }
+  },
+  "copyright-1": "copyright",
+  "copyright-2": " all right reserved",
+  "home": {
+    "d": "Home",
+    "b-i": {
+      "country": "",
+      "district": "Home"
+    },
+    "c": {
+      "h1": "Home"
+    },
+    "tokyo": {
+      "outer-a": "Explore Tokyo",
+      "text-p": "Cities like Tokyo and Osaka are shopping paradises and entertainment hubs. From high-end department stores to unique specialty shops, along with a wide range of entertainment activities and amusement places, travelers can fully enjoy the pleasures of shopping and entertainment.",
+      "text-btn": "Learn more surprise information!"
+    },
+    "kaohsiung": {
+      "outer-a": "Explore Kaohsiung",
+      "text-p": "Major cities in Taiwan, such as Taipei and Kaohsiung, are highly modernized, with towering skyscrapers and advanced technology. However, within these cities, one can also find traditional markets and old neighborhoods, offering a perfect blend of modernity and tradition.",
+      "text-btn": "Explore more, opportunities are limited!"
+    },
+    "singapore": {
+      "outer-a": "Explore Singapore",
+      "text-p": "Singapore boasts a modern urban landscape, including Marina Bay Sands, the Singapore Flyer, and Gardens by the Bay. At the same time, it has beautiful natural scenery such as Sentosa, the Zoo, and the Botanic Gardens. Travelers can enjoy the tranquility of nature amid the bustling city.",
+      "text-btn": "Click here to get exclusive offers!"
+    },
+    "zhejiang": {
+      "outer-a": "Explore Zhejiang",
+      "text-p": "The natural scenery in China, such as the picturesque landscapes of Huangshan and Guilin, and the snowy plateau of Tibet, is truly captivating and makes people reluctant to leave.",
+      "text-btn": "Check out the details now!"
+    }
+  }
+}

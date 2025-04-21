@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hot Travel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 18px;
+        letter-spacing: normal;
+        word-spacing: 3px;
+        line-height: normal;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-family: "Mulish", serif;
+      }
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .hero-container-fluid {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("./img/home/singapore (6).jpg") center/cover no-repeat;
+      }
+      .hero.dropdown a {
+        font-size: 1.1rem;
+      }
+      .section.hero {
+        text-align: center;
+        background-color: transparent;
+      }
+      .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        margin: 15px auto;
+        background-color: transparent;
+      }
+      .hero-content a {
+        text-transform: uppercase;
+        color: #ff7900;
+        background-color: transparent;
+        border: 3px solid white;
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+      .hero-content a:hover {
+        color: white;
+        border: 3px solid #ffa200;
+        font-weight: 1200;
+      }
+      .hero-content h1 {
+        color: white;
+        font-weight: 800;
+      }
+      .hero-content p {
+        color: white;
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+      .no-arrow::after {
+        display: none;
+      }
+      @media screen and (min-width: 480px) {
+        .hero-container-fluid {
+          background: linear-gradient(
+              rgba(0, 0, 0, 0),
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0)
+            ),
+            url("./img/home/diana-lisunova-sL3F5Qh7paY-unsplash.jpg")
+              center/cover no-repeat;
+        }
+      }
+      @media (min-width: 576px) {
+        .hero-container-fluid {
+          background: linear-gradient(
+              rgba(0, 0, 0, 0),
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0)
+            ),
+            url("./img/home/matt-benson-OEiN_lSyQqE-unsplash.jpg") center/cover
+              no-repeat;
+        }
+      }
+      @media (min-width: 768px) {
+        .hero-container-fluid {
+          background: linear-gradient(
+              rgba(0, 0, 0, 0),
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0)
+            ),
+            url("./img/home/marjan-blan-bsIARMwidSg-unsplash.jpg") center/cover
+              no-repeat;
+        }
+      }
+      @media (min-width: 992px) {
+        .hero-container-fluid {
+          background: linear-gradient(
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0)
+            ),
+            url("./img/home/rod-long-4dcsLxQxSHY-unsplash.jpg") center/cover
+              no-repeat;
+        }
+      }
+      @media (min-width: 1200px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero-container-fluid">
+      <!-- <div class="hero.dropdown">
+        <a
+          class="btn dropdown-toggle no-arrow"
+          href="#"
+          role="button"
+          data-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa fa-earth-asia fa-beat fa-lg" style="color: #ff7900"></i>
+        </a>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="javascript:pageTran('zh-CN');">简</a>
+          <a class="dropdown-item" href="javascript:pageTran('en');">English</a>
+        </div>
+      </div> -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1></h1>
+          <p>
+            Travel helps people recharge and regain energy amidst a busy life.
+            Exploring the world reveals its beauty and diversity, promoting
+            balance and well-being.
+            <br />
+            旅游可以让人在繁忙的生活中重新充电，恢复精力。同时，探索世界让人感受到生活的美好与多样性，有助于促进身心平衡。
+          </p>
+          <a class="btn" href="javascript:window.location = location.origin"
+            >Hot Travel</a
+          >
+        </div>
+      </section>
+    </div>
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script></script>
+  </body>
+</html>

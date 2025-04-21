@@ -1,0 +1,534 @@
+<style>
+  .home .breadcrumb-item:nth-child(1) {
+    color: var(--secondary-color);
+  }
+  .default {
+    width: 100%;
+    text-align: center;
+  }
+  .group-a,
+  .group-b {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .group-a {
+    margin-top: 15px;
+  }
+  .image,
+  .text {
+    width: 410px;
+    height: 200px;
+    max-width: 410px;
+  }
+
+  .image {
+    position: relative;
+  }
+
+  .group-a .image .outer,
+  .group-b .image .outer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .group-a .image .outer:hover,
+  .group-b .image .outer:hover {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .group-a .image .inner:hover,
+  .group-b .image .inner:hover {
+    color: var(--secondary-color);
+    border: 3px solid var(--primary-color);
+    background: white;
+  }
+
+  .group-a .image a,
+  .group-b .image a {
+    position: absolute;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--pending-color);
+    color: white;
+    font-weight: 700;
+  }
+
+  .tokyo .image {
+    background: url("./img/home/Akihabara Electric Town.jpg") center/cover
+      no-repeat;
+  }
+
+  .kaohsiung .image {
+    background: url("./img/home/samuel-toh-WiwgQRxBrSc-unsplash.jpg")
+      center/cover no-repeat;
+  }
+  .singapore .image {
+    background: url("./img/home/Gardens by the Bay (22).jpg") center/cover
+      no-repeat;
+  }
+
+  .zhejiang .image {
+    background: url("./img/home/chester-ho-MfmCt8fRaQw-unsplash (1).jpg")
+      center/cover no-repeat;
+  }
+
+  .group-a .text,
+  .group-b .text {
+    text-align: left;
+    overflow-y: scroll;
+  }
+
+  section.tokyo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  section.kaohsiung {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  section.singapore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  section.zhejiang {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  section.tokyo,
+  section.kaohsiung,
+  section.singapore,
+  section.zhejiang {
+    padding: 15px;
+    margin: 0px;
+    margin-bottom: 15px;
+    background-color: white;
+    align-items: center;
+  }
+
+  @media (max-width: 500px) {
+    .group-a,
+    .group-b {
+      justify-content: left;
+    }
+    section.tokyo,
+    section.singapore {
+      margin-right: 0px;
+    }
+    section.tokyo,
+    section.kaohsiung,
+    section.singapore,
+    section.zhejiang {
+      width: 80%;
+    }
+  }
+
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    section.tokyo,
+    section.singapore {
+      margin-right: 0px;
+    }
+    section.tokyo,
+    section.kaohsiung,
+    section.singapore,
+    section.zhejiang {
+      width: 100%;
+    }
+    .group-a .text p,
+    .group-b .text p {
+      padding-top: 15px;
+    }
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    section.tokyo,
+    section.singapore {
+      margin-right: 0px;
+    }
+    section.tokyo,
+    section.kaohsiung,
+    section.singapore,
+    section.zhejiang {
+      width: 100%;
+    }
+
+    .group-a .text p,
+    .group-b .text p {
+      padding-top: 15px;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    section.tokyo,
+    section.singapore {
+      margin-right: 0px;
+      width: 100%;
+    }
+    section.kaohsiung,
+    section.zhejiang {
+      width: 100%;
+    }
+
+    .tokyo .image {
+      min-height: 200px;
+      /* margin-right: 15px;
+      width: calc(50% - 15px); */
+      width: 50%;
+    }
+    .tokyo .text {
+      min-height: 200px;
+      width: 50%;
+    }
+
+    .kaohsiung .text {
+      min-height: 200px;
+      /* margin-right: 15px;
+      width: calc(50% - 15px); */
+      width: 50%;
+    }
+    .kaohsiung .image {
+      min-height: 200px;
+      width: 50%;
+    }
+
+    .singapore .image {
+      min-height: 200px;
+      /* margin-right: 15px;
+      width: calc(50% - 15px); */
+      width: 50%;
+    }
+    .singapore .text {
+      min-height: 200px;
+      width: 50%;
+    }
+
+    .zhejiang .text {
+      min-height: 200px;
+      /* margin-right: 15px;
+      width: calc(50% - 15px); */
+      width: 50%;
+    }
+    .zhejiang .image {
+      min-height: 200px;
+      width: 50%;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    section.tokyo,
+    section.singapore {
+      margin-right: 15px;
+      width: calc(50% - 15px);
+    }
+    section.kaohsiung,
+    section.zhejiang {
+      width: 50%;
+    }
+
+    .tokyo .image {
+      min-width: 200px;
+      min-height: 200px;
+      width: 100%;
+      /* margin-bottom: 15px; */
+    }
+    .tokyo .text {
+      min-width: 200px;
+      min-height: 200px;
+      width: 100%;
+    }
+
+    .kaohsiung .text {
+      min-width: 200px;
+      min-height: 200px;
+      width: 100%;
+    }
+    .kaohsiung .image {
+      min-width: 200px;
+      min-height: 200px;
+      width: 100%;
+      /* margin-bottom: 15px; */
+    }
+
+    .singapore .image {
+      min-width: 200px;
+      min-height: 200px;
+      width: 100%;
+      /* margin-bottom: 15px; */
+    }
+    .singapore .text {
+      min-width: 200px;
+      min-height: 200px;
+      width: 100%;
+    }
+
+    .zhejiang .text {
+      min-width: 200px;
+      width: 100%;
+      min-height: 200px;
+    }
+    .zhejiang .image {
+      min-width: 200px;
+      width: 100%;
+      min-height: 200px;
+      /* margin-bottom: 15px; */
+    }
+    .group-a .text p,
+    .group-b .text p {
+      padding-top: 15px;
+    }
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    section.tokyo,
+    section.singapore {
+      margin-right: 15px;
+      width: calc(50% - 15px);
+    }
+
+    section.kaohsiung,
+    section.zhejiang {
+      width: 50%;
+    }
+
+    .tokyo .image {
+      min-width: 200px;
+      min-height: 200px;
+      /* margin-right: 15px;
+      width: calc(50% - 15px); */
+      width: 50%;
+    }
+    .tokyo .text {
+      min-width: 200px;
+      min-height: 200px;
+      width: 50%;
+    }
+
+    .kaohsiung .text {
+      min-width: 200px;
+      min-height: 200px;
+      /* margin-right: 15px;
+      width: calc(50% - 15px); */
+      width: 50%;
+    }
+    .kaohsiung .image {
+      min-width: 200px;
+      min-height: 200px;
+      width: 50%;
+    }
+
+    .singapore .image {
+      min-width: 200px;
+      min-height: 200px;
+      /* margin-right: 15px;
+      width: calc(50% - 15px); */
+      width: 50%;
+    }
+    .singapore .text {
+      min-width: 200px;
+      min-height: 200px;
+      width: 50%;
+    }
+
+    .zhejiang .text {
+      min-width: 200px;
+      min-height: 200px;
+      /* margin-right: 15px;
+      width: calc(50% - 15px); */
+      width: 50%;
+    }
+    .zhejiang .image {
+      min-width: 200px;
+      min-height: 200px;
+      width: 50%;
+    }
+  }
+  .home-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    color: white;
+    padding-left: 5px;
+    align-items: center;
+  }
+
+  .home-social li {
+    display: block;
+    align-items: center;
+  }
+
+  #content-wrapper > main > div.default > ul > li {
+    list-style: none;
+  }
+  .home-social li a {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: black;
+    align-items: center;
+  }
+  .home-social li a:hover {
+    color: gray;
+  }
+</style>
+<!-- breadcrumb -->
+<div class="row">
+  <div class="col-md-12 home">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#"></a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<!-- /.breadcrumb -->
+<!-- home -->
+<div class="default">
+  <ul class="home-social">
+    <li>
+      <a
+        href="https://www.linkedin.com/in/alan-chan-4aa760131/recent-activity/all/"
+        target="_blank"
+      >
+        <!-- <i class="fa-brands fa-linkedin"></i> -->
+        <img height="30px" width="auto" src="./img/linkedin_icon.png" />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.facebook.com/profile.php?id=100063864763108&sk=photos"
+        target="_blank"
+      >
+        <!-- <i class="fa-brands fa-facebook"></i> -->
+        <img height="55px" width="auto" src="./img/facebook_icon.png" />
+      </a>
+    </li>
+    <li>
+      <a href="https://x.com" target="_blank">
+        <!-- <i class="fa-brands fa-x-twitter"></i> -->
+        <img
+          height="30px"
+          width="auto"
+          src="./img/33db85327ef3dce38c89b81b5b020005.png"
+        />
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/alan10thousand2/" target="_blank"
+        ><img height="35px" width="auto" src="./img/instagram_icon.png" />
+      </a>
+    </li>
+  </ul>
+  <!-- group a -->
+  <div class="group-a">
+    <!-- tokyo -->
+    <section class="tokyo">
+      <div class="image">
+        <p class="outer">
+          <a href="#" class="inner" onclick="hrClick('tokyo');"></a>
+        </p>
+      </div>
+      <div class="text">
+        <p></p>
+        <div style="text-align: center">
+          <button
+            class="btn btn-primary"
+            id="tokyoBtn"
+            onclick="tokyoBtnClick();"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!-- /.tokyo -->
+    <!-- kaohsiung -->
+    <section class="kaohsiung">
+      <div class="text">
+        <p></p>
+        <div style="text-align: center">
+          <button
+            class="btn btn-primary"
+            id="kaohsiungBtn"
+            onclick="kaohsiungBtnClick();"
+          ></button>
+        </div>
+      </div>
+      <div class="image">
+        <p class="outer">
+          <a href="#" class="inner" onclick="hrClick('kaohsiung');"></a>
+        </p>
+      </div>
+    </section>
+    <!-- /.kaohsiung -->
+  </div>
+  <!-- /.group a-->
+  <!-- group b -->
+  <div class="group-b">
+    <!-- singapore -->
+    <section class="singapore">
+      <div class="image">
+        <p class="outer">
+          <a href="#" class="inner" onclick="hrClick('singapore');"></a>
+        </p>
+      </div>
+      <div class="text">
+        <p></p>
+        <div style="text-align: center">
+          <button
+            class="btn btn-primary"
+            id="singaporeBtn"
+            onclick="singaporeBtnClick();"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!-- /.singapore -->
+    <!-- zhejiang -->
+    <section class="zhejiang">
+      <div class="text">
+        <p></p>
+        <div style="text-align: center">
+          <button
+            class="btn btn-primary"
+            id="zhejiangBtn"
+            onclick="zhejiangBtnClick();"
+          ></button>
+        </div>
+      </div>
+      <div class="image">
+        <p class="outer">
+          <a href="#" class="inner" onclick="hrClick('zhejiang');"></a>
+        </p>
+      </div>
+    </section>
+    <!-- /.zhejiang -->
+  </div>
+  <!-- /.group b -->
+
+  <p style="color: transparent"></p>
+</div>
+<!-- /.home -->
